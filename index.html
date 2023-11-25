@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&family=Inter:wght@400;700&family=Permanent+Marker&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <title>Weather</title>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=41dacd2e-6dc3-4480-b472-6ccc6660e679" type="text/javascript"></script>
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+<main>
+    <section class="main-elements">
+
+        <ul class="main-elements__input-list">
+
+            <li class="main-elements__input-list-item">
+                <p>Широта</p>
+                <input type="number" class="main-elements__input-list-item-latitude" placeholder="от -90 до 90">
+            </li>
+            <li class="main-elements__input-list-item">
+                <p>Долгота</p>
+                <input type="number" class="main-elements__input-list-item-longitude" placeholder="от -180 до 180">
+            </li>
+
+        </ul>
+
+        <div class="main-elements__part">
+            <button class="main-elements__part-get-weather" id="get-weather">
+                Показать погоду
+            </button>
+        </div>
+
+        <aside class="main-elements__request-history">
+            <div class="main-elements__request-history__part">
+                <h1>История запросов</h1>
+            </div>
+            <ul class="main-elements__request-history__list" id="history-list"></ul>
+        </aside>
+
+    </section>
+
+    <section class="main-info">
+
+        <div class="extra-info__map-info">
+            <h2 class="extra-info__map-info__part-main-text">Место на карте:</h2>
+            <div class="extra-info__map-info-map" id="map"></div>
+        </div>
+
+        <ul class="main-info__list">
+
+            <li class="main-info__list-item">
+                <h2 class="main-info__list-item-place">Место</h2>
+                <p class="main-info__list-item-time">:</p>
+                <div class="main-info__list-item-photo" id="photo"></div>
+            </li>
+            <li class="main-info__list-item">
+                <h2>Температура</h2>
+                <p class="main-info__list-item-temperature">°C</p>
+            </li>
+            <li class="main-info__list-item">
+                <h2>Ощущается как</h2>
+                <p class="main-info__list-item-feels">°C</p>
+            </li>
+            <li class="main-info__list-item">
+                <h2>Давление</h2>
+                <p class="main-info__list-item-pressure">гПа</p>
+            </li>
+            <li class="main-info__list-item">
+                <h2>Влажность</h2>
+                <p class="main-info__list-item-humidity">%</p>
+            </li>
+            <li class="main-info__list-item">
+                <h2 class="main-info__list-item-wind-direction">Ветер</h2>
+                <p class="main-info__list-item-wind-speed">км/ч</p>
+            </li>
+
+        </ul>
+
+    </section>
+
+</main>
+</body>
+
+</html>

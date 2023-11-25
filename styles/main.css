@@ -1,0 +1,260 @@
+body {
+    margin: 0 0 0 0;
+
+    color: #000;
+    font-family: Inter, serif;
+    font-size: 40px;
+}
+
+.main-elements__request-history {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 40px;
+    display: flex;
+    flex-flow: column;
+}
+
+.main-elements__request-history__part {
+    display: flex;
+    margin-top: 30px;
+    height: 49px;
+    border-radius: 30px;
+    border: 2px solid black;
+    width: 244px;
+}
+
+.main-elements__request-history h1 {
+    color: #000;
+    font-size: 20px;
+
+    margin: 13px 0 0 20px;
+}
+
+.main-elements__request-history__list {
+    margin-left: 60px;
+    margin-top: 15px;
+    padding-left: 0;
+}
+
+.main-elements__request-history__list li {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.main-elements__request-history__list h3 {
+    color: #000000;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+
+.main-elements__request-history__list p {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 16px;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+input {
+    font-size: 32px;
+    text-align: center;
+}
+
+.main-elements__input-list {
+    margin-top: 30px;
+    padding-left: 0;
+    display: grid;
+    justify-content: center;
+}
+
+.main-elements__input-list-item {
+    width: 617px;
+    margin-top: 52px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-elements__input-list-item:first-child {
+    margin-top: 0;
+}
+
+.main-elements__input-list-item input {
+    margin-left: 47px;
+
+    border: black solid 2px;
+
+    height: 49px;
+    width: 405px;
+}
+
+.main-elements__input-list-item p {
+    margin: 0 0 0 0;
+}
+
+.main-elements__part-get-weather {
+    height: 91px;
+    width: 617px;
+
+    color: ivory;
+    font-size: 40px ;
+
+    border-radius: 8px;
+    padding: 21px 144px 21px 144px;
+    background: #355FCA;
+    border: 0;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #87A0DD;
+    }
+    100% {
+        background-color: #607ECA;
+    }
+}
+
+.main-elements__part {
+    display: grid;
+    justify-content: center;
+}
+
+.main-info {
+    display: flex;
+    justify-content: center;
+    background-color: #6387E4;
+    margin-top: 43px;
+}
+
+h2 {
+    color: ivory;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 11px;
+}
+
+.main-info__list {
+    padding-left: 0;
+
+    width: 617px;
+    list-style-type: none;
+
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.main-info__list-item {
+    margin-bottom: 2px;
+    height: 100px;
+    width: 32%;
+}
+
+.main-info__list-item:last-child {
+    width: 66%;
+}
+
+.main-info__list-item:first-child {
+    height: 100px;
+    width: 90%;
+
+    border-radius: 30px;
+    border: 2px solid ivory;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.main-info__list-item p {
+    margin-top: -10px;
+    text-align: center;
+    font-size: 32px;
+    color:ivory;
+}
+
+.main-info__list-item-place {
+    margin-top: 32px;
+}
+
+.main-info__list-item-time {
+    padding-top: 32px;
+}
+
+.extra-info__map-info {
+    color: ivory;
+    display: flex;
+    width: fit-content;
+    flex-flow: column;
+    margin-right: 100px;
+}
+
+.extra-info__map-info__part-main-text {
+    display: flex;
+    flex-flow: column;
+    font-size: 36px;
+}
+
+.extra-info__map-info__part-description {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.extra-info__map-info-map {
+    justify-content: right;
+
+    width: 340px;
+    height: 300px;
+    border: 2px solid ivory;
+}
+
+.additional-weather-info__weather {
+    display: flex;
+}
+
+.additional-weather-info__weather__block {
+    display: flex;
+    flex-flow: column;
+}
+
+.additional-weather-info__weather__block-header {
+    color: #000;
+    text-align: right;
+    font-size: 36px;
+
+    margin-right: 100px;
+    margin-top: 40px;
+}
+
+.additional-weather-info__weather__block-description {
+    color: #000;
+    text-align: right;
+    font-size: 24px;
+
+    margin-right: 100px;
+    margin-top: 80px;
+}
+
+.main-info__list-item-photo {
+    margin-top: 20px;
+    margin-right: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 53px;
+    border-radius: 20px;
+    border: 2px solid ivory;
+    background-size: cover;
+    background-position: center;
+}
